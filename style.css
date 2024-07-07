@@ -1,0 +1,38 @@
+#main_title{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.box1 h2{
+    float: left;
+}
+.box1 button{
+    float: right;
+}
+.container{
+    margin-top: 50px;
+}
+h5{
+    text-align: center;
+    color: red;
+}
+h6{
+    text-align: center;
+    color: rgb(106, 255, 0);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-align {
+    margin-left: auto; /* This pushes the content to the right */
+    text-align: right;
+}
+
