@@ -38,7 +38,7 @@ class User {
             $stmt->execute([$username, $email, $password]);
 
             $_SESSION['username'] = $username;
-            $_SESSION['success'] = "You are now logged in";
+            //$_SESSION['success'] = "You are now logged in";
             header('Location: view_students.php');
             exit();
         }

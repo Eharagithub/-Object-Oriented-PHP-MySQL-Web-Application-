@@ -44,7 +44,7 @@ $students = $student->getAllStudents();
     <?php endif ?>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-3">
     <div class="box1">
         <h2>ALL STUDENTS</h2>
         <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ADD STUDENTS</button>
