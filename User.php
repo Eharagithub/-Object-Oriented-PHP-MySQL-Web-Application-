@@ -39,7 +39,7 @@ class User {
 
             $_SESSION['username'] = $username;
             //$_SESSION['success'] = "You are now logged in";
-            header('Location: view_students.php');
+            header('Location: Navigation/index.php');
             exit();
         }
 
@@ -61,7 +61,7 @@ class User {
             if ($user && password_verify($password, $user['password'])) {
                 $_SESSION['username'] = $username;
                 $_SESSION['success'] = "You are now logged in";
-                header('Location: view_students.php');
+                header('Location:Navigation/index.php');
                 exit();
             } else {
                 $errors[] = "Wrong username/password combination";

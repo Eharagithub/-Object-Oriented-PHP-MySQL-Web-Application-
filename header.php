@@ -12,5 +12,4 @@
 
 <body>
 
-    <h1 id="main_title">Student Details</h1>
     <div class="container">
