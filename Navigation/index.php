@@ -30,10 +30,12 @@ $students = $student->getAllStudents();
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Admin panel</title>
-    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+    <!-- header part -->
     <nav class="navbar">
         <div class="logo_item">
             <i class="bx bx-menu" id="sidebarOpen"></i>
@@ -101,7 +103,7 @@ $students = $student->getAllStudents();
                         <span class="navlink">Filter</span>
                     </a>
                 </li>
-               
+
             </ul>
             <ul class="menu_items">
                 <div class="menu_title menu_setting"></div>
@@ -136,8 +138,63 @@ $students = $student->getAllStudents();
         </div>
     </nav>
 
-    <!-- JavaScript -->
-    <script src="../script.js"></script> <!-- Adjusted path -->
+    <!--main part-->
+    <div class="main">
+
+        <div class="searchbar2">
+            <input type="text" name="" id="" placeholder="Search">
+            <div class="searchbtn">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png" class="icn srchicn" alt="search-button">
+            </div>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box box1">
+                <div class="text">
+                    <h2 class="topic-heading">60.5k</h2>
+                    <h2 class="topic">All Students</h2>
+                </div>
+
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png" alt="Views">
+            </div>
+
+            <div class="box box2">
+                <div class="text">
+                    <h2 class="topic-heading">150</h2>
+                    <h2 class="topic">Likes</h2>
+                </div>
+
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes">
+            </div>
+
+            <div class="box box3">
+                <div class="text">
+                    <h2 class="topic-heading">320</h2>
+                    <h2 class="topic">Comments</h2>
+                </div>
+
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png" alt="comments">
+            </div>
+
+            <div class="box box4">
+                <div class="text">
+                    <h2 class="topic-heading">Notice</h2>
+                    <h2 class="topic">View here</h2>
+                </div>
+
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="https://www.vidyalayaschoolsoftware.com/webassets/images/school_software_1.png" alt="published">
+
+        </div>
+
+
+        <!-- JavaScript -->
+        <script src="../script.js"></script>
 </body>
 
 </html>
