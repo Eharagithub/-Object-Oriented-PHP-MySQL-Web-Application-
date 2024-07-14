@@ -17,8 +17,8 @@
             <div class="front">
                 <img src="images/frontImg.jpg" alt="">
                 <div class="text">
-                    <span class="text-1">Every new friend is a <br> new adventure</span>
-                    <span class="text-2">Let's get connected</span>
+                <span class="text-1">Student Management<br> System</span>
+                <span class="text-2">get connected</span>
                 </div>
             </div>
 
