@@ -1,18 +1,19 @@
 <?php
 session_start();
-require_once '../Database.php'; // Adjusted path
-require_once '../Student.php';  // Adjusted path
+
+require_once '../Database.php'; 
+require_once '../Student.php';  
 
 if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
-    header('location: ../login.php'); // Adjusted path
+    header('location: ../login.php'); 
     exit();
 }
 
 if (isset($_GET['logout'])) {
     session_destroy();
     unset($_SESSION['username']);
-    header("location: ../login.php"); // Adjusted path
+    header("location: ../login.php"); 
     exit();
 }
 
@@ -22,6 +23,7 @@ $student = new Student($connection);
 
 $students = $student->getAllStudents();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,7 +71,7 @@ $students = $student->getAllStudents();
                     </div>
                 </li>
                 <li class="item">
-                    <a href="../All_students.php" class="nav_link submenu_item"> <!-- Adjusted path -->
+                    <a href="../All_students.php" class="nav_link submenu_item"> 
                         <span class="navlink_icon">
                             <i class="bx bx-grid-alt"></i>
                         </span>
@@ -80,7 +82,7 @@ $students = $student->getAllStudents();
             <ul class="menu_items">
                 <div class="menu_title menu_editor"></div>
                 <li class="item">
-                    <a href="../view_students.php" class="nav_link"> <!-- Adjusted path -->
+                    <a href="../view_students.php" class="nav_link"> 
                         <span class="navlink_icon">
                             <i class="bx bx-cloud-upload"></i>
                         </span>
@@ -88,7 +90,7 @@ $students = $student->getAllStudents();
                     </a>
                 </li>
                 <li class="item">
-                    <a href="../Update_students.php" class="nav_link"> <!-- Adjusted path -->
+                    <a href="../Update_students.php" class="nav_link"> 
                         <span class="navlink_icon">
                             <i class="bx bxs-magic-wand"></i>
                         </span>
@@ -96,7 +98,7 @@ $students = $student->getAllStudents();
                     </a>
                 </li>
                 <li class="item">
-                    <a href="../filter.php" class="nav_link"> <!-- Adjusted path -->
+                    <a href="../filter.php" class="nav_link"> 
                         <span class="navlink_icon">
                             <i class="bx bx-filter"></i>
                         </span>
@@ -108,7 +110,7 @@ $students = $student->getAllStudents();
             <ul class="menu_items">
                 <div class="menu_title menu_setting"></div>
                 <li class="item">
-                    <a href="../notice_board.php" class="nav_link"> <!-- Adjusted path -->
+                    <a href="../notice_board.php" class="nav_link"> 
                         <span class="navlink_icon">
                             <i class="bx bx-flag"></i>
                         </span>
@@ -116,7 +118,7 @@ $students = $student->getAllStudents();
                     </a>
                 </li>
                 <li class="item">
-                    <a href="../settings.php" class="nav_link"> <!-- Adjusted path -->
+                    <a href="../settings.php" class="nav_link"> 
                         <span class="navlink_icon">
                             <i class="bx bx-cog"></i>
                         </span>
@@ -192,7 +194,7 @@ $students = $student->getAllStudents();
 
         </div>
 
-
+    </div>
         <!-- JavaScript -->
         <script src="../script.js"></script>
 </body>
