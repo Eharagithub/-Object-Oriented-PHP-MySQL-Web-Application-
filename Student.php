@@ -1,7 +1,7 @@
 <?php
 class Student {
     private $db;
-
+    
     public function __construct($db) {
         $this->db = $db;
     }
@@ -25,10 +25,10 @@ class Student {
         return $stmt->execute([$id]);
     }
 
-    public function getStudentById($id) {
-        $query = "SELECT * FROM students WHERE Id = ?";
+    public function getStudentByName($f_name) {
+        $query = "SELECT * FROM students WHERE f_name = ?";
         $stmt = $this->db->prepare($query);
-        $stmt->execute([$id]);
+        $stmt->execute([$f_name]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
