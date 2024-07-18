@@ -40,7 +40,7 @@ if(isset($_GET['Id_new'])){
     $stmt->bindParam(':Id', $Id_new);
 
     if($stmt->execute()){
-        header('location:view_students.php?update_msg=You have successfully updated the data');
+        header('location:All_students.php?update_msg=You have successfully updated the data');
     } else {
         die("Query Failed: " . $stmt->errorInfo()[2]);
     }
