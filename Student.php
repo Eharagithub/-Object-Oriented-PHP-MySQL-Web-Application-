@@ -26,7 +26,7 @@ class Student {
     }
 
     public function getStudentByName($f_name) {
-        $query = "SELECT * FROM students WHERE f_name = ?";
+        $query = "SELECT * FROM students WHERE f_name LIKE ?";
         $stmt = $this->db->prepare($query);
         $stmt->execute([$f_name]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
