@@ -12,9 +12,10 @@
 }
 .box1 button{
     float: right;
+    margin-right: 20px;
 }
 .container{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 h5{
     text-align: center;
@@ -35,4 +36,6 @@ h6{
     margin-left: auto; /* This pushes the content to the right */
     text-align: right;
 }
+
+
 

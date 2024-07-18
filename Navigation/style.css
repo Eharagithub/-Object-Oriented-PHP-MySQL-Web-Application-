@@ -13,7 +13,7 @@
   --grey-color-light: #aaa;
 }
 body {
-  background-color: #eab7f9;
+  background-color: #1c0224;
   transition: all 0.5s ease;
 }
 body.dark {
@@ -23,7 +23,7 @@ body.dark {
   --white-color: #333;
   --blue-color: #fff;
   --grey-color: #f2f2f2;
-  --grey-color-light: #d388d4;
+  --grey-color-light: #970299;
 }
 
 /* navbar */

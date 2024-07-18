@@ -25,7 +25,7 @@ if (isset($_GET['logout'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <?php include("header.php"); ?>
 
 
@@ -160,11 +160,10 @@ if (isset($_GET['logout'])) {
 
         <!-- <div class="container mt-3"> -->
         <div class="box1">
-            <h2>ALL STUDENTS</h2>
-
+            <h2 style="color: #bf9eb7;">ALL STUDENTS</h2>
         </div>
-
-        <table class="table table-hover table-bordered table-striped mt-3">
+<br><br>
+        <table class="table table-hover table-bordered table-striped mt-4" style="width: 110%;margin-bottom: 1rem;color: #bf9eb7;">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -208,8 +207,8 @@ if (isset($_GET['logout'])) {
     </form>
 
     <?php include("footer.php"); ?>
-     <!-- JavaScript -->
-     <script src="../script.js"></script>
+    <!-- JavaScript -->
+    <script src="Navigation/script.js"></script>
 </body>
 
 </html>

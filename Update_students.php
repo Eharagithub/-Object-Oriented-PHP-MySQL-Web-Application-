@@ -148,11 +148,12 @@ $students = $student->getAllStudents();
 
             <div class="container mt-3">
                 <div class="box1">
-                    <h2>UPDATE STUDENTS</h2>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ADD STUDENTS</button>
+                    <h2 style="color: #bf9eb7;">UPDATE STUDENTS</h2>
+                    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">ADD STUDENTS</button> -->
+                    <br><br>
                 </div>
 
-                <table class="table table-hover table-bordered table-striped mt-3">
+                <table class="table table-hover table-bordered table-striped mt-3" style="width: 110%;margin-bottom: 1rem;color: #bf9eb7;">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -194,45 +195,6 @@ $students = $student->getAllStudents();
                 }
                 ?>
             </div>
-
-            <!-- Add Students Modal -->
-            <form action="insert_data.php" method="post">
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Add Student</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label for="f_name">First Name</label>
-                                    <input type="text" name="f_name" class="form-control" id="studentFirstName" placeholder="Enter first name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="l_Name">Last Name</label>
-                                    <input type="text" name="l_name" class="form-control" id="studentLastName" placeholder="Enter last name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="address">Address</label>
-                                    <input type="text" name="address" class="form-control" id="studentAddress" placeholder="Enter address">
-                                </div>
-                                <div class="form-group">
-                                    <label for="age">Age</label>
-                                    <input type="number" name="age" class="form-control" id="studentAge" placeholder="Enter age">
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <input type="submit" name="add_student" value="ADD" class="btn btn-success">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-
         </div>
     </div>
     <?php include("footer.php"); ?>
