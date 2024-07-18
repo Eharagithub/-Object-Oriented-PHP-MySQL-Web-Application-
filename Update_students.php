@@ -42,17 +42,17 @@ $students = $student->getAllStudents();
     <nav class="navbar">
         <div class="logo_item">
             <i class="bx bx-menu" id="sidebarOpen"></i>
-            <img src="#" alt="">Student Management System
+            <img src="https://w7.pngwing.com/pngs/1005/782/png-transparent-student-college-university-term-paper-student-management-angle-people-logo.png" alt="">Student Management System
         </div>
         <div class="search_bar">
             <input type="text" placeholder="Search" />
         </div>
-        <div class="navbar_content">
+        <div class="navbar_content" >
             <i class="bi bi-grid"></i>
             <i class='bx bx-sun' id="darkLight"></i>
             <?php if (isset($_SESSION['username'])) : ?>
-                <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-                <p><a href="Update_students.php?logout='1'" style="color: red;">logout</a></p>
+                <p style="padding-top: 12px;">Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+                <p style="padding-top: 12px;"><a href="Update_students.php?logout='1'" style="color: purple;">log out</a></p>
             <?php endif ?>
             <!-- <img src="images/profile.jpg" alt="" class="profile" /> -->
         </div>

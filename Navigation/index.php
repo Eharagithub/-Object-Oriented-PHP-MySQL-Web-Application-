@@ -41,7 +41,7 @@ $students = $student->getAllStudents();
     <nav class="navbar">
         <div class="logo_item">
             <i class="bx bx-menu" id="sidebarOpen"></i>
-            <img src="#" alt="">Student Management System
+            <img src="https://w7.pngwing.com/pngs/1005/782/png-transparent-student-college-university-term-paper-student-management-angle-people-logo.png" alt="">Student Management System
         </div>
         <div class="search_bar">
             <input type="text" placeholder="Search" />
@@ -51,7 +51,7 @@ $students = $student->getAllStudents();
             <i class='bx bx-sun' id="darkLight"></i>
             <?php if (isset($_SESSION['username'])) : ?>
                 <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-                <p><a href="index.php?logout='1'" style="color: red;">logout</a></p>
+                <p><a href="index.php?logout='1'" style="color: purple;">log out</a></p>
             <?php endif ?>
             <!-- <img src="images/profile.jpg" alt="" class="profile" /> -->
         </div>
@@ -141,7 +141,7 @@ $students = $student->getAllStudents();
     </nav>
 
     <!--main part-->
-    <div class="main">
+    <div class="main" style="padding: 150px 30px 30px 270px;">
 
         <div class="searchbar2">
             <input type="text" name="" id="" placeholder="Search">
@@ -154,8 +154,10 @@ $students = $student->getAllStudents();
 
             <div class="box box1">
                 <div class="text">
+               
                     <h2 class="topic-heading">60.5k</h2>
                     <h2 class="topic">All Students</h2>
+               
                 </div>
 
                 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png" alt="Views">

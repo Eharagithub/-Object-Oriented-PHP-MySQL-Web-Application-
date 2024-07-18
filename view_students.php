@@ -60,7 +60,7 @@ $students = $student->getAllStudents();
 <nav class="navbar">
     <div class="logo_item">
         <i class="bx bx-menu" id="sidebarOpen"></i>
-        <img src="#" alt="">Student Management System
+        <img src="https://w7.pngwing.com/pngs/1005/782/png-transparent-student-college-university-term-paper-student-management-angle-people-logo.png" alt="">Student Management System
     </div>
     <div class="search_bar">
         <input type="text" placeholder="Search" />
@@ -69,8 +69,8 @@ $students = $student->getAllStudents();
         <i class="bi bi-grid"></i>
         <i class='bx bx-sun' id="darkLight"></i>
         <?php if (isset($_SESSION['username'])) : ?>
-            <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-            <p><a href="view_students.php?logout='1'" style="color: red;">logout</a></p>
+            <p style="padding-top: 12px;">Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+            <p style="padding-top: 12px;"><a href="view_students.php?logout='1'" style="color: purple;">log out</a></p>
         <?php endif ?>
         <!-- <img src="images/profile.jpg" alt="" class="profile" /> -->
     </div>
@@ -166,8 +166,10 @@ $students = $student->getAllStudents();
         <div class="container mt-3">
             <div class="box1">
                 <h2 style="color: #bf9eb7;">ADD STUDENTS</h2>
-                <br><br>
-                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style=" margin-right: 20px;">ADD STUDENTS</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style=" margin-right: -75px;background-color: #f244f7;
+    border-color: #520167">ADD STUDENT</button>
+                <br><br><br>
+
             </div>
 
             <table class="table table-hover table-bordered table-striped mt-3" style="width: 110%;margin-bottom: 1rem;color: #bf9eb7;">
@@ -253,8 +255,8 @@ $students = $student->getAllStudents();
 
 <?php include("footer.php"); ?>
 
-  <!-- JavaScript -->
-  <script src="Navigation/script.js"></script>
+<!-- JavaScript -->
+<script src="Navigation/script.js"></script>
 </body>
 
 </html>
